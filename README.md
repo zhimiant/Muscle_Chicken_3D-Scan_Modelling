@@ -4,9 +4,9 @@
 **Class 01 — 3D Scanning & AI-Assisted 3D Modelling**  
 **Wanwu Lab · November 2026**
 
-![Muscle Chicken — Blender presentation](images/after_rendered_in_blender.png)
+![Muscle Chicken — final project visualization](images/after_rendered_in_blender.png)
 
-> **Project overview** — Muscle Chicken explores the transformation of a real, crocheted chick into a playful digital character with a cowboy hat and exaggerated muscles. The project combines 3D scanning, AI image generation, Tripo-based 3D modelling, and Blender editing. This repository documents the workflow and provides the images and model files used throughout the process.
+> **Project overview** — Muscle Chicken explores the transformation of a real, crocheted chick into a playful digital character with a cowboy hat and exaggerated muscles. The project combines 3D scanning, AI image generation, initial 3D modelling in Tripo, model editing in Blender, and AI rendering in Tripo after the edited model is re-imported. This repository documents the workflow and provides the images and model files used throughout the process.
 
 ---
 
@@ -18,7 +18,7 @@ The starting point was a small yellow crocheted chick with a rounded silhouette 
 
 The contrast between the chick's soft, cute appearance and its exaggerated strength gives the character its humorous identity. Rather than stopping at a generated image, we developed a three-dimensional model that can be viewed and further edited in Blender.
 
-**Design process:** Physical object → 3D scan → AI concept image → AI-generated 3D model → Blender editing.
+**Design process:** Physical object → 3D scan → AI concept image → Initial Tripo 3D model → Blender editing → Re-import into Tripo → AI rendering.
 
 ![AI-generated Muscle Chicken concept](images/ai_generated_pic.png)
 
@@ -48,6 +48,7 @@ The repository includes a file named `final_print_ready.zip` as the final export
 | Concept development | ChatGPT image generation | Explore the cowboy hat, muscular body, and character proportions |
 | AI 3D modelling | Tripo | Convert the character reference into a 3D model and inspect its components |
 | Mesh editing | Blender | Import, position, scale, and refine the digital assets |
+| AI rendering | Tripo | Re-import the edited 3D model and produce the final AI-rendered presentation |
 | Documentation | GitHub | Organize source files, progress images, and project records |
 
 ### 3.2 Step 01 — Scanning the Physical Chick
@@ -98,29 +99,35 @@ The main editing tasks were:
 
 **Download:** [Editable project files](models/editable_project.zip)
 
-### 3.6 Step 05 — Final Presentation and Print Preparation
+### 3.6 Step 05 — Re-importing the Edited Model into Tripo for AI Rendering
 
-After the main modelling adjustments, the character was reviewed in 3D and prepared for presentation. A final model package was exported for possible subsequent slicing and printing tests.
+**After completing the model modifications in Blender, we imported the edited 3D model back into Tripo and used its AI rendering features to produce the final visual presentation.** This was a separate stage from the initial image-to-3D generation: the edited geometry, rather than the original concept image, was used for the subsequent rendering workflow.
 
-![3D model presentation in Tripo](images/rendering_using_tripo.png)
+This final rendering stage was intended to communicate the character's appearance more clearly. It should be distinguished from modelling and mesh repair: a polished AI-rendered image does not establish that the underlying geometry is ready for 3D printing.
 
-![Final presentation in Blender](images/after_rendered_in_blender.png)
+![AI rendering in Tripo after the Blender edits](images/rendering_using_tripo.png)
+
+![Final project visualization](images/after_rendered_in_blender.png)
+
+### 3.7 Step 06 — Exporting the Model for Further Print Preparation
+
+The edited model was also saved as a separate exported file package for potential slicing and fabrication tests.
 
 **Download:** [Final exported model](models/final_print_ready.zip)
 
-> **Printing status:** This repository documents the digital model and exported files, not a completed physical print. Slicer settings and physical printing results have not yet been verified or recorded. Before fabrication, the mesh should be inspected for watertightness, scale, overhangs, weak features, and suitable support placement.
+> **Printing status:** This repository documents the digital model, AI rendering, and exported files, not a completed physical print. Slicer settings and physical printing results have not yet been verified or recorded. Before fabrication, the mesh should be inspected for watertightness, scale, overhangs, weak features, and suitable support placement.
 
-### 3.7 How to Reproduce the Process
+### 3.8 How to Reproduce the Process
 
 1. Choose a small physical object with distinctive visual features and scan it using a suitable 3D scanner and accompanying software.
 2. Export and preserve the original scan before modifying the geometry.
 3. Generate a character concept based on the object. Refine the visual prompt until the silhouette and proportions are clear.
 4. Use Tripo to convert the selected concept image into a 3D model. Download and inspect the geometry.
 5. Import the model into Blender, examine the components from several views, and adjust the position, orientation, and proportions as needed.
-6. Save an editable project and export a separate model for further 3D-print preparation.
-7. Before printing, verify the mesh and record any slicer settings, print tests, and changes.
+6. Save the editable Blender project. Re-import the edited 3D model into Tripo and use its AI rendering workflow to create presentation images.
+7. Export a separate model package for further 3D-print preparation. Before printing, verify the mesh and record any slicer settings, print tests, and changes.
 
-### 3.8 Problems, Solutions, and Lessons Learned
+### 3.9 Problems, Solutions, and Lessons Learned
 
 **Challenge 1 — Uneven scanned surfaces.**  
 The crocheted material has an irregular texture, which results in a complex scanned mesh. The first priority was to preserve the recognizable form instead of smoothing away every small surface feature.
@@ -142,7 +149,7 @@ If a physical version is produced, the next iteration should focus on mesh integ
 | [ai_generated_model.zip](models/ai_generated_model.zip) | AI-generated 3D model |
 | [editable_project.zip](models/editable_project.zip) | Editable project files |
 | [final_print_ready.zip](models/final_print_ready.zip) | Final exported model package for further print preparation |
-| [images/](images/) | Images from scanning, AI generation, modelling, and Blender editing |
+| [images/](images/) | Images from scanning, AI concept development, 3D modelling, Blender editing, and subsequent Tripo AI rendering |
 
 ---
 
