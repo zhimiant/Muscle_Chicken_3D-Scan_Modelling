@@ -52,9 +52,9 @@ The repository includes a file named `final_print_ready.zip` as the final export
 
 ### 3.2 Step 01 — Scanning the Physical Chick
 
-We used a **Revopoint POP 2** scanner and **Revo Scan** to capture the shape of the crocheted chick. The goal was to preserve the overall silhouette and the irregular texture of the yarn while checking the scan for missing or noisy areas.
+We used a **Revopoint POP 2** scanner and **Revo Scan** to capture the shape of the crocheted chick. The chick was placed on a black turntable with tracking markers, while the scanner was mounted on a small tripod facing the object. A laptop running Revo Scan showed the live **RGB camera** and **depth camera** previews so we could check whether the chick was correctly positioned within the scanning area.
 
-Because the crocheted surface contains many small bumps and recesses, the resulting mesh is less uniform than a typical manufactured object. The original scan was therefore preserved separately from later editing files.
+The scan aimed to preserve the chick's rounded silhouette, facial features, and irregular yarn texture. Its soft, highly textured surface produced a complex mesh that needed inspection for noise and incomplete areas. The original scan was preserved separately so that subsequent editing would not overwrite the captured data.
 
 ![Original scan in Revo Scan](images/raw_scan.png)
 
