@@ -1,135 +1,149 @@
 # MUSCLE CHICKEN
-### 从实物扫描到AI辅助3D角色设计
-**Class 01 · 3D Scanning & AI-Assisted 3D Modelling · Wanwu Lab · November 2026**
+### From Physical Scanning to AI-Assisted 3D Character Design
 
-![Muscle Chicken — Blender展示效果](images/after_rendered_in_blender.png)
+**Class 01 — 3D Scanning & AI-Assisted 3D Modelling**  
+**Wanwu Lab · November 2026**
 
-> **项目简介**｜从一只真实的黄色钩织小鸡出发，结合3D扫描、AI图像生成、Tripo三维建模与Blender编辑，将柔软、可爱的原型转化为具有牛仔帽和夸张肌肉造型的数字角色。此仓库保存了主要制作过程、阶段截图和可下载的模型文件。
+![Muscle Chicken — Blender presentation](images/after_rendered_in_blender.png)
+
+> **Project overview** — Muscle Chicken explores the transformation of a real, crocheted chick into a playful digital character with a cowboy hat and exaggerated muscles. The project combines 3D scanning, AI image generation, Tripo-based 3D modelling, and Blender editing. This repository documents the workflow and provides the images and model files used throughout the process.
 
 ---
 
-## 1. What Is It? | 这是什么作品？
+## 1. What Is It?
 
-**Muscle Chicken（肌肉鸡）** 是一个将实物数字化与AI辅助造型相结合的角色设计实验。
+**Muscle Chicken** is a character-design experiment that connects physical objects with digital fabrication tools.
 
-项目最初的对象是一只黄色钩织小鸡。它原本的形态圆润、柔软，表面具有明显的编织纹理。我们先对实物进行3D扫描，获取它的数字几何形态；之后以小鸡的外观作为创作起点，通过AI图像生成提出新的角色设计：保留小鸡圆润的头部与辨识度高的脸部特征，加入牛仔帽、发达的肩臂肌肉和健壮的身体，形成可爱与力量感之间的视觉反差。
+The starting point was a small yellow crocheted chick with a rounded silhouette and a distinctive textured surface. We captured its form using a 3D scanner, then used the chick as visual inspiration for a new character. The design preserves the recognizable round head and friendly face while introducing a cowboy hat, oversized arms, a muscular torso, and short legs.
 
-最终作品不是单纯的一张AI图片，而是一个经过三维生成与Blender调整的数字模型。项目同时保留了原始扫描数据、AI模型与可编辑的制作工程，展示了从**现实物体 → 数字扫描 → AI造型 → 三维编辑**的完整路径。
+The contrast between the chick's soft, cute appearance and its exaggerated strength gives the character its humorous identity. Rather than stopping at a generated image, we developed a three-dimensional model that can be viewed and further edited in Blender.
 
-![AI生成的肌肉鸡概念图](images/ai_generated_pic.png)
+**Design process:** Physical object → 3D scan → AI concept image → AI-generated 3D model → Blender editing.
 
-## 2. What Does It Do? | 它可以用来做什么？
+![AI-generated Muscle Chicken concept](images/ai_generated_pic.png)
 
-**Muscle Chicken是一件静态数字角色作品**，而不是具有机械运动或交互功能的产品。
+---
 
-它主要用于展示三种设计可能性：
+## 2. What Does It Do?
 
-- **角色再设计：** 在保留原始小鸡形象特征的同时，借助夸张的身体比例建立鲜明的角色性格。
-- **数字化展示：** 模型可以在Blender中旋转、缩放和调整视角，用于观察角色的整体轮廓、肌肉体块及配件关系。
-- **数字制造探索：** 三维模型可以继续进行网格修复、尺度校正、切片与打印测试，作为后续实体制作的基础。
+Muscle Chicken is a **static digital character**, not a mechanical or interactive product. Its purpose is to explore how a real object's identity can be reimagined through digital tools.
 
-本次仓库中已经提供名为 `final_print_ready.zip` 的最终导出版本；**这不等于已经完成实体3D打印，也不代表打印适配性已经通过验证**。实际打印前仍需检查模型尺寸、闭合性、薄弱连接和支撑需求。
+The project demonstrates three possibilities:
 
-## 3. How Was It Made? | 它是如何制作的？
+- **Character redesign:** Transforming a familiar, friendly object into a distinctive character through changes in proportion, costume, and body shape.
+- **Digital presentation:** Examining the character from different angles in Blender to assess its silhouette, muscular forms, and relationships between parts.
+- **Fabrication potential:** Using the 3D model as a starting point for mesh repair, scaling, slicing, and future 3D printing.
 
-### 3.1 工具与文件
+The repository includes a file named `final_print_ready.zip` as the final exported model package. **Physical printing and printability have not yet been documented or verified here.** Before printing, the model should be checked for correct dimensions, closed geometry, fragile details, and required supports.
 
-| 阶段 | 使用工具 | 主要任务 |
+---
+
+## 3. How Was It Made?
+
+### 3.1 Tools and Software
+
+| Stage | Tool | Purpose |
 | --- | --- | --- |
-| 实物扫描 | Revopoint POP 2、Revo Scan | 采集小鸡的三维形态并导出扫描数据 |
-| 角色概念设计 | ChatGPT图像生成 | 设计牛仔帽、肌肉身体与角色比例 |
-| AI三维建模 | Tripo | 将角色参考图转换为3D模型，查看整体与部件 |
-| 网格编辑与组合 | Blender | 导入、缩放、调整及整理数字模型 |
-| 成果整理 | GitHub | 保存模型文件、阶段图片与制作文档 |
+| 3D scanning | Revopoint POP 2 and Revo Scan | Capture the physical chick and export its scanned geometry |
+| Concept development | ChatGPT image generation | Explore the cowboy hat, muscular body, and character proportions |
+| AI 3D modelling | Tripo | Convert the character reference into a 3D model and inspect its components |
+| Mesh editing | Blender | Import, position, scale, and refine the digital assets |
+| Documentation | GitHub | Organize source files, progress images, and project records |
 
-### 3.2 Step 01 — 扫描真实的小鸡
+### 3.2 Step 01 — Scanning the Physical Chick
 
-使用 **Revopoint POP 2** 扫描黄色钩织小鸡，并在 **Revo Scan** 中查看扫描结果。扫描过程的重点是尽可能保留小鸡整体外形及表面的钩织质感，同时检查是否存在缺失、噪声和不完整区域。
+We used a **Revopoint POP 2** scanner and **Revo Scan** to capture the shape of the crocheted chick. The goal was to preserve the overall silhouette and the irregular texture of the yarn while checking the scan for missing or noisy areas.
 
-钩织材质表面凹凸较多，扫描获得的网格不一定像规则工业零件那样平整，因此后续需要结合建模软件检查与处理。原始扫描文件予以保留，避免后期编辑覆盖最初的数据。
+Because the crocheted surface contains many small bumps and recesses, the resulting mesh is less uniform than a typical manufactured object. The original scan was therefore preserved separately from later editing files.
 
-![Revo Scan中的扫描模型](images/raw_scan.png)
+![Original scan in Revo Scan](images/raw_scan.png)
 
-**原始扫描数据：** [original_scan.zip](models/original_scan.zip)
+**Download:** [Original 3D scan](models/original_scan.zip)
 
-### 3.3 Step 02 — AI辅助角色概念设计
+### 3.3 Step 02 — Developing the Character with AI
 
-以小鸡照片为参考，在ChatGPT中探索形象变化：**让小鸡原本圆润的身体形象成为角色头部，并为它增加牛仔帽、强壮的手臂、胸腹部肌肉和腿部造型**。
+We used the chick as a visual reference and developed a new character concept through **ChatGPT image generation**. The main instructions were to treat the chick's rounded body as the character's head and add a cowboy hat, broad shoulders, muscular arms, a defined torso, and legs.
 
-生成过程并非一次完成，而是通过调整头身比例、肌肉体块和帽子的视觉效果，逐步明确角色方向。这个阶段的核心任务是建立清晰的3D建模参考，而不只是生成一张好看的效果图。
+The concept evolved through adjustments to the head-to-body ratio, the size of the muscles, and the position of the hat. The aim was to create a clear visual reference for 3D modelling while keeping the chick recognizable.
 
-![ChatGPT生成的角色设计图](images/ai_generated_pic.png)
+![AI-generated character concept](images/ai_generated_pic.png)
 
-### 3.4 Step 03 — 通过Tripo生成三维模型
+### 3.4 Step 03 — Generating the 3D Model in Tripo
 
-将确定的角色参考图用于 **Tripo** 的AI三维建模流程，生成可在三维空间观察的角色几何模型，并查看模型整体与部件结构。
+The selected character image was used as the reference for **Tripo's image-to-3D workflow**. This produced a 3D starting point that could be inspected from different angles and examined as separate parts.
 
-AI生成模型提供了牛仔帽、肩臂、胸腹与腿部等复杂形态的基础，但其比例、连接关系与局部网格仍需要进一步检查，不能直接将图像生成结果等同于完成的可打印模型。
+The generated model provided a basis for the hat, arms, chest, and legs. However, AI-generated geometry still required inspection for proportions, intersections, and connections between parts.
 
-![Tripo三维生成过程](images/modelling_using_tripo.png)
+![AI 3D modelling in Tripo](images/modelling_using_tripo.png)
 
-![Tripo模型的部件查看过程](images/modelling_using_tripo_in_parts.png)
+![Inspecting the generated model components](images/modelling_using_tripo_in_parts.png)
 
-**AI生成模型文件：** [ai_generated_model.zip](models/ai_generated_model.zip)
+**Download:** [AI-generated 3D model](models/ai_generated_model.zip)
 
-### 3.5 Step 04 — 在Blender中编辑与整理
+### 3.5 Step 04 — Editing the Model in Blender
 
-将扫描模型与AI生成的三维素材导入 **Blender**，围绕角色整体比例、位置和局部衔接进行检查和调整。工作重点包括：
+We brought the digital assets into **Blender** to review their shapes and continue editing. This stage focused on the relationship between the scanned chick and the newly designed character, as well as the visual balance of the 3D model.
 
-1. 对比扫描获得的小鸡特征与AI角色的设计目标。
-2. 检查AI生成模型的头身比例、肌肉体块以及帽子与头部的关系。
-3. 使用移动、旋转和缩放等操作调整模型的空间位置与相对比例。
-4. 查看模型表面、局部穿插和部件连接，保留后续修改所需的可编辑工程。
+The main editing tasks were:
 
-![导入Blender的AI模型](images/raw_ai_generated_model_in_blender.png)
+1. Compare the scanned chick's recognizable features with the new character design.
+2. Inspect the scale of the head, arms, torso, legs, and cowboy hat.
+3. Use translation, rotation, and scaling to adjust the placement and proportions of 3D objects.
+4. Review surface details, overlapping geometry, and component connections.
+5. Save an editable project so that the model can be revised later.
 
-![Blender模型编辑过程](images/editing_process.png)
+![Initial 3D model imported into Blender](images/raw_ai_generated_model_in_blender.png)
 
-**可编辑工程文件：** [editable_project.zip](models/editable_project.zip)
+![Blender editing process](images/editing_process.png)
 
-### 3.6 Step 05 — 展示结果与3D打印准备
+**Download:** [Editable project files](models/editable_project.zip)
 
-完成主要造型调整后，在三维软件中检查整体形态并保存用于展示的结果。随后整理最终导出文件，为切片与3D打印测试做准备。
+### 3.6 Step 05 — Final Presentation and Print Preparation
 
-![三维模型生成与展示](images/rendering_using_tripo.png)
+After the main modelling adjustments, the character was reviewed in 3D and prepared for presentation. A final model package was exported for possible subsequent slicing and printing tests.
 
-![Blender中的最终展示效果](images/after_rendered_in_blender.png)
+![3D model presentation in Tripo](images/rendering_using_tripo.png)
 
-**最终模型：** [final_print_ready.zip](models/final_print_ready.zip)
+![Final presentation in Blender](images/after_rendered_in_blender.png)
 
-> **打印状态说明：** 目前仓库展示的是数字模型与打印准备文件，未在此记录已经验证的切片参数或实物打印结果。后续打印应先校验模型是否封闭、尺寸是否正确、悬空部位是否需要支撑，以及各连接处是否足够牢固。
+**Download:** [Final exported model](models/final_print_ready.zip)
 
-### 3.7 复现流程 | Reproduction
+> **Printing status:** This repository documents the digital model and exported files, not a completed physical print. Slicer settings and physical printing results have not yet been verified or recorded. Before fabrication, the mesh should be inspected for watertightness, scale, overhangs, weak features, and suitable support placement.
 
-如果希望从头复现类似的作品，可以按照以下顺序操作：
+### 3.7 How to Reproduce the Process
 
-1. 准备一只具有清晰外形特征的实物小鸡，并使用3D扫描仪和配套软件采集模型。
-2. 保存原始扫描数据，不要直接覆盖；在三维编辑软件中检查表面与缺失区域。
-3. 使用小鸡照片生成带牛仔帽和肌肉身体的角色参考图，并反复调整造型比例。
-4. 将参考图导入Tripo进行图像到3D的生成，下载模型并检查细节和部件结构。
-5. 在Blender中导入素材，调整尺度、方向、位置和模型关系，保存可编辑工程。
-6. 导出用于后续打印测试的模型文件，并在实际切片前重新检查几何问题。
+1. Choose a small physical object with distinctive visual features and scan it using a suitable 3D scanner and accompanying software.
+2. Export and preserve the original scan before modifying the geometry.
+3. Generate a character concept based on the object. Refine the visual prompt until the silhouette and proportions are clear.
+4. Use Tripo to convert the selected concept image into a 3D model. Download and inspect the geometry.
+5. Import the model into Blender, examine the components from several views, and adjust the position, orientation, and proportions as needed.
+6. Save an editable project and export a separate model for further 3D-print preparation.
+7. Before printing, verify the mesh and record any slicer settings, print tests, and changes.
 
-### 3.8 遇到的问题与改进 | Problems & Iterations
+### 3.8 Problems, Solutions, and Lessons Learned
 
-**问题一：扫描表面复杂。** 钩织小鸡的表面纹理细碎、形状不规则，扫描结果容易出现起伏较多的网格。相比追求过度光滑，更重要的是先保留整体轮廓，再有针对性地检查缺失区域。
+**Challenge 1 — Uneven scanned surfaces.**  
+The crocheted material has an irregular texture, which results in a complex scanned mesh. The first priority was to preserve the recognizable form instead of smoothing away every small surface feature.
 
-**问题二：AI图像与三维结构之间存在差异。** 二维参考图可以快速确定牛仔帽和肌肉造型，但转换为三维后，局部结构和比例未必符合预期，因此必须返回三维软件逐项检查。
+**Challenge 2 — Differences between AI images and 3D geometry.**  
+A 2D image can communicate an appealing hat and muscular body, but the generated 3D geometry may not reproduce every detail as intended. Checking the model from multiple angles is therefore essential.
 
-**问题三：角色比例需要反复调整。** 小鸡头部与肌肉身体的大小关系直接决定最终形象是否协调。通过多轮修改概念图并在Blender中观察不同视角，逐步明确了作品的主要视觉特征。
+**Challenge 3 — Finding the right proportions.**  
+The relationship between the oversized chick head and the muscular torso strongly affects the character's appearance. Refining the concept image and reviewing the model in Blender helped define a more coherent design.
 
-**后续改进：** 如果继续制作实体版本，将重点检查网格封闭性、部件连接、细小突起的强度与打印支撑，并补充切片截图、参数和实际打印照片。
+**Next steps.**  
+If a physical version is produced, the next iteration should focus on mesh integrity, connections between parts, thin or fragile details, support requirements, and documenting actual printing parameters and results.
 
-### 项目文件 | Project Files
+### Project Files
 
-| 文件 | 内容 |
+| File | Description |
 | --- | --- |
-| [original_scan.zip](models/original_scan.zip) | 原始3D扫描数据 |
-| [ai_generated_model.zip](models/ai_generated_model.zip) | AI生成的3D模型 |
-| [editable_project.zip](models/editable_project.zip) | 可编辑工程文件 |
-| [final_print_ready.zip](models/final_print_ready.zip) | 用于后续打印准备的最终导出模型 |
-| [images/](images/) | 扫描、AI生成、建模及Blender过程截图 |
+| [original_scan.zip](models/original_scan.zip) | Original 3D scan |
+| [ai_generated_model.zip](models/ai_generated_model.zip) | AI-generated 3D model |
+| [editable_project.zip](models/editable_project.zip) | Editable project files |
+| [final_print_ready.zip](models/final_print_ready.zip) | Final exported model package for further print preparation |
+| [images/](images/) | Images from scanning, AI generation, modelling, and Blender editing |
 
 ---
 
-*Class 01 · Digital Fabrication Documentation · Wanwu Lab*
+*Class 01 · Digital Fabrication Process Documentation · Wanwu Lab*
